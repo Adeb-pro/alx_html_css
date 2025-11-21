@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmileSchool Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #0b1736;
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+        header .logo {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        header nav a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 300;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+            opacity: 0.25;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .hero h1 {
+            font-size: 64px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .btn-primary {
+            background: #be4bdb;
+            padding: 12px 26px;
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .pros {
+            text-align: center;
+            margin-top: 100px;
+        }
+        .pros h2 {
+            margin-bottom: 40px;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        .pro-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        .pro-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            width: 200px;
+            text-align: center;
+        }
+        .pro-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .pro-card h3 {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .pro-card p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">SmileSchool</div>
+        <nav>
+            <a href="#">Courses</a>
+            <a href="#">Pricing</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="/mnt/data/d606969b-5958-44e9-92cf-eeb9e3db625d.png" alt="Hero Image" />
+        <h1>Get schooled</h1>
+        <p>SMILES • GRIN • LAUGH</p>
+        <a class="btn-primary" href="#">REGISTER FOR FREE</a>
+    </section>
+
+    <section class="pros">
+        <h2>Learn from the pros</h2>
+        <div class="pro-list">
+            <div class="pro-card">
+                <img src="https://via.placeholder.com/80" />
+                <h3>Phillip Massey</h3>
+                <p>Smile of the year <br />2018 - 2019</p>
+            </div>
+            <div class="pro-card">
+                <img src="https://via.placeholder.com/80" />
+                <h3>Nannie Lawrence</h3>
+                <p>Best little smile <br />2017</p>
+            </div>
+            <div class="pro-card">
+                <img src="https://via.placeholder.com/80" />
+                <h3>Bruce Walters</h3>
+                <p>Best performance <br />2020</p>
+            </div>
+            <div class="pro-card">
+                <img src="https://via.placeholder.com/80" />
+                <h3>Henry Hughes</h3>
+                <p>24h smiles winner <br />2016 - 2019</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
