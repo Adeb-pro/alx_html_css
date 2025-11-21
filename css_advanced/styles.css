@@ -126,3 +126,56 @@ strong {
     color:#a745c0;
     font-weight: 600;
 }
+.signup-cta {
+    background-color: #8e44ad;
+}
+.cta img {
+    display: flex;
+    justify-content: left;
+}
+
+/* ============================
+   Testimonial Section
+============================ */
+.testimonial {
+    background: #c779ff;         /* the purple background */
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    gap: 40px;
+}
+
+.testimonial-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-text .quote {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+}
+
+.testimonial-text .name {
+    font-weight: 600;
+    margin: 0;
+}
+
+.testimonial-text .role {
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 5px 0 0 0;
+}
+
+
