@@ -299,3 +299,63 @@ strong {
     }
 }
 
+/* ============================
+   Membership Section
+============================ */
+.membership {
+    background: #0b1736;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.membership h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.membership h2 span {
+    color: #c779ff; /* purple “Free” */
+    font-weight: 600;
+}
+
+.membership-features {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.feature {
+    max-width: 200px;
+}
+
+.feature .icon {
+    font-size: 40px;
+    color: #c779ff;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.feature p {
+    font-size: 14px;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+/* Button */
+.btn-membership {
+    background: #c779ff;
+    padding: 14px 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    display: inline-block;
+}
