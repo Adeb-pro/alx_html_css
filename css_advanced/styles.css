@@ -4,8 +4,11 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-image: url(images/image\ \(21\).png);
+   
     color: white;
+}
+.background {
+ background-image: url(images/image\ \(21\).png);
 }
 
 /* ============================
@@ -178,4 +181,121 @@ strong {
     margin: 5px 0 0 0;
 }
 
+.popular-tutorials {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.popular-tutorials h4 {
+    font-size: 32px;
+    font-weight: 600;
+    color: black;
+    
+}
+
+.popular-tutorials h4 span {
+    color: #9a4dff;
+}
+
+.tutorial-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.thumb {
+    position: relative;
+}
+
+.thumb img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #9a4dff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.card h3 {
+    text-align: left;
+    padding: 15px 15px 5px;
+}
+
+.card p {
+    text-align: left;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.card-footer {
+    margin-top: 15px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.author img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.stars {
+    color: #9a4dff;
+    font-size: 14px;
+}
+
+.time {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Mobile responsive */
+@media (max-width: 900px) {
+    .tutorial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .tutorial-grid {
+        grid-template-columns: 1fr;
+    }
+}
 

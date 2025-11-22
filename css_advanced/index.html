@@ -4,116 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SmileSchool Landing Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-image: url(images/image\ \(21\).png);
-
-
-
-            color: white;
-
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-        }
-        header .logo {
-            font-size: 20px;
-            font-weight: 600;
-        }
-        header nav a {
-            margin-left: 20px;
-            color: white;
-            text-decoration: none;
-            font-weight: 300;
-        }
-        .hero {
-            position: relative;
-            text-align: center;
-            padding: 80px 20px;
-        }
-        .hero img {
-            width: 100%;
-            height: auto;
-            opacity: 0.25;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-        .hero h1 {
-            font-size: 100px;
-            margin: 0;
-        }
-        .hero p {
-            font-size: 18px;
-            opacity: 0.9;
-        }
-        .btn-primary {
-            background: #be4bdb;
-            padding: 12px 26px;
-            color: white;
-            border-radius: 25px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        
-        .pros {
-            text-align: center;
-            margin-top: 100px;
-        }
-        .pros h2 {
-            margin-bottom: 40px;
-            font-weight: 400;
-            opacity: 0.9;
-        }
-        .pro-list {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 40px;
-        }
-        .pro-card {
-            
-            padding: 20px;
-            border-radius: 5px;
-            width: 200px;
-            text-align: center;
-        }
-        .pro-card img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        .pro-card h3 {
-            margin: 5px 0;
-            font-size: 18px;
-        }
-        .pro-card p {
-            font-size: 10px;
-            opacity: 0.8;
-        }
-        .smiles {
-            font-size: 60px;
-            font-weight: 600;
-            margin-top: 10px;
-            word-spacing: 40px;
-        }
-        strong{
-           color: #be4bdb;
-        }
-        
-        
-    </style>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <article class="background">
     <header>
         <div class="logo"><img src="images/image (26).png">SmileSchool</div>
         <nav>
@@ -126,34 +20,148 @@
     <section class="hero">
         <img src="/mnt/data/d606969b-5958-44e9-92cf-eeb9e3db625d.png" alt="Hero Image" />
         <h1>Get schooled</h1>
-        <p class="smiles"> Smiles  GRIN  LAUGH</p>
+        <p class="smiles"> SMILES  GRIN  LAUGH</p>
+        
+        
         <a class="btn-primary" href="#">REGISTER FOR FREE</a>
     </section>
 
+
+
     <section class="pros">
-        <h2><strong class="wow">Learn</strong> the pros</h2>
+        <h2><strong class="wow">Learn</strong> from the pros</h2>
         <div class="pro-list">
             <div class="pro-card">
                 <img src="images/image (22).png" />
                 <h3>Phillip Massey</h3>
-                <p>Smile of the year <br />2018 - 2019</p>
+                <p><em> Smile of the year >> <br />2018 - 2019</em></p>
             </div>
             <div class="pro-card">
                 <img src="images/image (23).png" />
                 <h3>Nannie Lawrence</h3>
-                <p>Best little smile <br />2017</p>
+                <p><em>little smile <br />2017</em></p>
             </div>
             <div class="pro-card">
                 <img src="images/image (24).png" />
                 <h3>Bruce Walters</h3>
-                <p>Best performance <br />2020</p>
+                <p><em>Best performance >><br />2020</em></p>
             </div>
             <div class="pro-card">
                 <img src="images/image (25).png" />
                 <h3>Henry Hughes</h3>
-                <p>24h smiles winner <br />2016 - 2019</p>
+                <p><em>24h smiles winner >><br />2016 - 2019</em></p>
             </div>
         </div>
     </section>
+    </article>
+
+    <section class="testimonial">
+    <div class="testimonial-container">
+        <img src="images/image (28).png" class="testimonial-img"/>
+
+        <div class="testimonial-text">
+            <p class="quote">
+                « Those tutorials are concise and go straight to the point. 
+                I can’t think of a better place to learn smiling. And it’s so fun!
+            </p>
+
+            <p class="name">Person Name</p>
+            <p class="role">weather presenter</p>
+        </div>
+    </div>
+</section>
+
+<section class="popular-tutorials">
+    <h4>Most <span>popular</span> tutorials</h4>
+
+    <div class="tutorial-grid">
+
+        <!-- CARD 1 -->
+        <div class="card">
+            <div class="thumb">
+                <img src="images/image (30).png" alt="Diagonal Smile">
+                <div class="play-btn">▶</div>
+            </div>
+            <h3>Diagonal Smile</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+
+            <div class="card-footer">
+                <div class="author">
+                    <img src="images/image (22).png" alt="">
+                    <span>Phillip Massey</span>
+                </div>
+                <div class="info">
+                    <span class="stars">★★★★★</span>
+                    <span class="time">8 min</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <div class="thumb">
+                <img src="images/image (31).png" alt="Sad Smile">
+                <div class="play-btn">▶</div>
+            </div>
+            <h3>Sad Smile</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+
+            <div class="card-footer">
+                <div class="author">
+                    <img src="images/image (22).png" alt="">
+                    <span>Phillip Massey</span>
+                </div>
+                <div class="info">
+                    <span class="stars">★★★★★</span>
+                    <span class="time">8 min</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <div class="thumb">
+                <img src="images/image (33).png" alt="Natural Smile">
+                <div class="play-btn">▶</div>
+            </div>
+            <h3>Natural Smile</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+
+            <div class="card-footer">
+                <div class="author">
+                    <img src="images/image (22).png" alt="">
+                    <span>Phillip Massey</span>
+                </div>
+                <div class="info">
+                    <span class="stars">★★★★★</span>
+                    <span class="time">8 min</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card">
+            <div class="thumb">
+                <img src="images/image (34).png" alt="Happy Smile">
+                <div class="play-btn">▶</div>
+            </div>
+            <h3>Happy Smile</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+
+            <div class="card-footer">
+                <div class="author">
+                    <img src="images/image (22).png" alt="">
+                    <span>Phillip Massey</span>
+                </div>
+                <div class="info">
+                    <span class="stars">★★★★★</span>
+                    <span class="time">8 min</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 </body>
 </html>
