@@ -402,3 +402,70 @@ strong {
 .faq-h3 {
     color: black;
 }
+.smilesschoolend-content {
+    text-align: center;
+    padding: 40px 20px;
+    color: black;
+} 
+
+.footer {
+    background: #07162B;  /* dark navy like screenshot */
+    padding: 60px 40px 30px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 40px;   /* adjust as needed */
+    margin-right: 12px;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-right a img {
+    width: 28px;
+    height: 28px;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.footer-right a img:hover {
+    opacity: 0.7;
+}
+
+/* Centered copyright */
+.footer p {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #9aa6b1; /* faint gray like screenshot */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-right a img {
+        margin-left: 10px;
+    }
+}
