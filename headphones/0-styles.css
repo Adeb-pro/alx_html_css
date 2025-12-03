@@ -61,6 +61,68 @@ body {
     align-self: center;
 }
 
+/* ---------------------------- */
+/* HAMBURGER MENU STYLES        */
+/* ---------------------------- */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s ease;
+}
+
+/* Mobile Navigation */
+@media (max-width: 480px) {
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0,0,0,0.9);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 150px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: right;
+        gap: 15px;
+        animation: fadeIn 0.3s ease;
+    }
+
+    .nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hamburger animation when active */
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 .hero-content {
     position: relative;
     z-index: 2;
@@ -299,3 +361,4 @@ textarea {
 .img1 {
     font-weight: 200;
 }
+
