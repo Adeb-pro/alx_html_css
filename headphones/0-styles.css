@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #ffffff;
+
+}
+
+  
+
+/* ---------------- HERO ---------------- */
+
+.hero {
+    height: 100vh;
+    
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+     background-image: url(image\ \(40\).png);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    
+}
+.nav a:hover {
+    cursor: pointer;
+    color: #ff6f6f;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.logo {
+    font-weight: 600;
+    align-self: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    top: 20%;
+}
+
+.hero-content h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero-content .sub {
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.cta {
+    background: #da5252;
+    border: none;
+    padding: 12px 30px;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.hero-text {
+    margin: 30px auto;
+    width: 50%;
+    font-size: 14px;
+    opacity: 0.9;
+    font-weight: 500;
+    
+    font-style: normal;
+}
+
+/* ---------------- SECTION ---------------- */
+
+.section-header {
+    background-color: white;
+}
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-desc {
+    max-width: 500px;
+    margin: 0 auto 50px;
+    color: #959ca3;
+    font-size: 12px;
+    font-weight: 600;
+}s
+
+h2 {
+     color: rgb(48, 46, 46);
+}
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.feature {
+    width: 160px;
+}
+.features-a {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.features-h {
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(48, 46, 46);
+    font-weight: 600;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* ---------------- RESULTS ---------------- */
+
+.results {
+    padding: 100px 0;
+    background: url("results-bg.jpg") center/cover no-repeat;
+    
+    text-align: center;
+    position: relative;
+     background-image: url(image\ \(47\).png);
+}
+
+.results::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    
+}
+
+.results > * {
+    position: relative;
+    z-index: 2;
+}
+.results1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+   
+}
+
+.stat {
+    background: #ff6f6f;
+    color: white;
+    width: 150px;
+    height: 120px;
+    clip-path: polygon(50% 0%, 95% 35%, 78% 90%, 22% 90%, 5% 35%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.stat span {
+    font-size: 28px;
+    font-weight: bold;
+}
+.stat1 {
+    font-size: 9px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* ---------------- CONTACT ---------------- */
+
+.contact {
+    padding: 100px 0;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+.logo1 {
+    font-weight: 600;
+    text-align: left;
+    align-self: center;
+   
+}
+/* ---------------- FOOTER ---------------- */
+
+.footer {
+    background: #04182d;       /* dark navy */
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+/* Flex container for logo + icons */
+.footer-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Section */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 40px;
+}
+
+.footer-logo span {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Social Icons */
+.footer-socials a img {
+    width: 35px;
+    margin-left: 20px;
+    transition: 0.3s ease;
+}
+
+.footer-socials a img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Copyright */
+.footer p {
+    font-size: 12px;
+    margin-top: 30px;
+    opacity: 0.5;
+}
+.img1 {
+    font-weight: 200;
+}
